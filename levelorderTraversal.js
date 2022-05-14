@@ -31,9 +31,26 @@ const levelorderTraversal = root => {
   }
 
   traverse(root, 0);
+
+  //iterative
+  /****
+   * 
+   */
+  // const queue = [root];
+
+  // while(queue.length) {
+  //   let levelSize = queue.length;
+  //   let levelNode = [];
+  //   for(let i = 0; i < levelSize; i++) {
+  //     let current = queue.shift();
+  //     levelNode.push(current.val);
+  //     if (current.left) queue.push(current.left);
+  //     if (current.right) queue.push(current.right);
+  //   }
+  //   output.push(levelNode);
+  // }
+
   return output;
-
-
 }
 
 //tree easy implementation
