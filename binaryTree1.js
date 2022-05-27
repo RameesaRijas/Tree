@@ -37,6 +37,10 @@
  */
 const buildTree = (inorder, postorder) => {
 
+  if (!inorder.length || !postorder.length) {
+    return null
+  }
+  
   //for post order root will be last element
   const root = new TreeNode(postorder[postorder.length - 1]);
   const mid = inorder.indexOf(postorder.pop());
