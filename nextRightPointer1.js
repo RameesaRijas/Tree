@@ -36,7 +36,7 @@
 const connect = function(root) {
   if (!root) return null;
 
-//bfs
+//bfs Solutions
 //     const queue = [root];
 //     while (queue.length > 0) {
 //         const size = queue.length;
@@ -57,7 +57,7 @@ const connect = function(root) {
     
 //     return root;
     
-//recursive
+//recursive Solutions
 
   if(!root.left) return root;
 
